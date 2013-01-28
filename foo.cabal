@@ -25,10 +25,11 @@ Test-suite doctest
     Main-is:          Doctest.hs
     Ghc-options:      -main-is Doctest
     Hs-source-dirs:   test
-    Build-depends:    base == 4.*
-                    , directory >= 1.0 && < 1.3
-                    , doctest   >= 0.8 && <= 0.10
-                    , filepath  >= 1.3 && < 1.4
+    Build-depends:    base
+                    , directory    >= 1.0
+                    , doctest      >= 0.8
+                    , doctest-prop >= 0.1
+                    , filepath     >= 1.3
 
 test-suite hspec
     Default-language: Haskell98
@@ -37,10 +38,10 @@ test-suite hspec
     Hs-source-dirs:   test
     Ghc-options:      -threaded -Wall -Werror
     Build-depends:    base
-                    , hspec >= 1.4
+                    , hspec              >= 1.4
                     , hspec-expectations >= 0.3
-                    , QuickCheck >= 2.5
-                    , HUnit >= 1.2.5
+                    , QuickCheck         >= 2.5
+                    , HUnit              >= 1.2.5
 
 Executable foo
     Main-is:          Main.hs
