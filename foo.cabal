@@ -80,7 +80,7 @@ Executable foo
                     , parallel-io
                     , pointless-fun
                     , regex-posix
-                    , shake
+                    , shelly
                     , system-fileio
                     , system-filepath
                     , text
